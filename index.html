@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,6 +28,7 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              "color-primary": "#abef5f",
             },
           },
         },
@@ -39,15 +40,110 @@
         font-family: "Manrope", sans-serif;
       }
     </style>
-
     <title>Rinterio</title>
   </head>
+  <!-- body section -->
   <body class=".font-manrope">
     <!-- header Section -->
     <header>
       <!-- navbar -->
-      <div></div>
+      <div class="container mx-auto">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+            <div
+              class="bg-color-primary px-2 py-2 mr-2 rounded-full text-black"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+            </div>
+            <h1 class="font-bold text-2xl text">Rinterio</h1>
+
+            <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-lg font-semibold">
+              <li class="font-bold"><a href="#">Home</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end gap-3">
+            <i
+              class="font-2xl text-gray-500 bg-white border px-3 py-3 rounded-full fa-solid fa-magnifying-glass"
+            ></i>
+            <i
+              class="font-2xl text-gray-500 bg-white border px-3 py-3 rounded-full fa-solid fa-cart-shopping"
+            ></i>
+            <div class="btn bg-color-primary">
+              <a class="text-xl font-semibold">Book Consult</a>
+              <i class="text-xl fa-solid fa-circle-arrow-up"></i>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- banner -->
+      <div class="container mx-auto flex flex-col items-center justify-center">
+        <div class="items-center justify-center">
+          <img class="" src="./assets/banner.png" alt="" />
+        </div>
+        <div>
+            <div class="hero-content text-center">
+              <div class="max-w-md">
+                <h1 class="mb-5 sm:text-5xl text-3xl font-bold">A barn house of this design has a striking appearance</h1>
+                <p class="mb-5">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                </p>
+                <div class="btn bg-color-primary">
+                    <a class="text-xl font-bold">View Details</a>
+                    <i class="text-xl fa-solid fa-circle-arrow-up"></i>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- main section -->
     <main></main>
