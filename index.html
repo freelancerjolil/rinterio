@@ -29,6 +29,8 @@
             colors: {
               clifford: "#da373d",
               "color-primary": "#abef5f",
+              "color-p": "#737373",
+              "color-footer": "#1E1E1E",
               "bg-body": "#ffffff",
               "color-primary1": "rgba(171, 239, 95, 0.5)",
               "body-primary": "rgba(244, 244, 244, 1)",
@@ -63,9 +65,7 @@
         <div class="navbar bg-base-100 ">
           <div class="navbar-start">
             
-            <div
-              class="bg-color-primary px-2 py-2 mr-2 rounded-full text-black"
-            >
+            <div class="bg-color-primary px-2 py-2 mr-2 rounded-full text-black">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -100,7 +100,7 @@
               class="font-2xl text-gray-500 bg-white border px-3 py-3 rounded-full fa-solid fa-cart-shopping hidden lg:block"
             ></i>
             <div class="flex btn py-2 bg-color-primary hover:bg-color-primary1 hidden lg:block">
-              <a class="text-xl font-bold text-[##1C1C1C] rounded-lg">Book Consult</a>
+              <a class="text-xl font-bold text-[#1C1C1C] rounded-lg">Book Consult</a>
               <i class=" rotate-45 text-xl fa-solid fa-circle-arrow-up"></i>
             </div>
 
@@ -129,10 +129,10 @@
         </div>
         <div>
             <div class="hero-content text-center">
-              <div class="w-9/12">
+              <div class="lg:w-9/12 w-full">
                 <h1 class="mb-5 sm:text-6xl text-3xl font-extrabold">A barn house of this design has a striking appearance</h1>
                 <p class="mb-5">
-                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
                 </p>
                 <div class="btn bg-color-primary1 hover:bg-color-primary rounded-lg ">
                     <a class="text-xl font-bold text-[#212121]">View Details</a>
@@ -151,8 +151,8 @@
                 <h2 class="absolute hidden lg:block left-0 top-[-25px]">
                     <img src="./assets/Vector.png" alt="">
                  </h2>
-                <div class="flex-1 mt-6 lg:ml-4 ml-0">
-                    <div class="btn bg-bg-body rounded-full lg:ml-10 ml-0">
+                <div class="flex-1 mt-6 lg:ml-4 ml-0 container mx-auto">
+                    <div class="lg:w-2/12 container mx-auto btn bg-bg-body rounded-full lg:ml-10 ml-0">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                           </svg>
@@ -192,10 +192,10 @@
         
     </main>
     <!-- Lets Discuss -->
-    <section class="lg:px-32 px-1 py-20 bannerBg mt-5"> 
+    <section class="lg:px-32 px-1 lg:py-20 py-5 bannerBg mt-5"> 
       <h1 class="lg:text-5xl text-3xl text-center mb-4 font-bold">Let’s Discuss Next Project</h1>
-      <p class="w-10/12 mx-auto text-center mb-5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
-      <div class="w-8/12 mx-auto bg-bannerBg">
+      <p class="w-11/12 mx-auto text-center mb-5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+      <div class="lg:w-8/12 w-11/12 mx-auto bg-bannerBg">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <input type="text" placeholder="First Name*" class="input input-bordered rounded-full w-full" />
           <input type="text" placeholder="Last Name*" class="input input-bordered rounded-full w-full" />
@@ -210,47 +210,40 @@
       </div>
       </section>
     <!-- footer section -->
-    <footer class="">
-      <div class="">
-        <footer class="footer footer-center text-base-content rounded p-10">
-          <div class="footer-center">
-            
-            <div
-              class="bg-color-primary px-2 py-2 mr-2 rounded-full text-black"
-            
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                />
-              </svg>
-            </div>
-            <h1 class="font-bold text-2xl text"><a href="#">Rinterio</a></h1>
-            <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+    <footer class=" footer bg-color-footer footer-center text-base-content rounded p-10">
+      <div class="flex">
+        <div class="bg-color-primary px-2 py-2 mr-2 rounded-full text-black">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+            />
+          </svg>
+        </div>
+        <h1 class="font-bold text-3xl text-white"><a href="#">Rinterio</a></h1>
+      </div>
+            <p class="lg:w-4/12 w-full text-color-p">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
           </div>
           <!-- Footer Link -->
-
-          <nav class="grid grid-flow-col gap-10">
+          <nav class="grid lg:grid-flow-col grid-col-1  gap-10 text-white">
             <a class="link link-hover">Home</a>
             <a class="link link-hover">Service</a>
             <a class="link link-hover">Portfolio</a>
             <a class="link link-hover">Blogs</a>
             <a class="link link-hover">Contact us</a>
           </nav>
-          <nav>
-          </nav>
-          <aside>
-            <p>Copyright © All right reserved by freelancerjolil</p>
-          </aside>
-        </footer>
+            <div class="flex btn py-2 bg-color-primary hover:bg-color-primary1">
+              <a class="text-xl font-bold text-[##1C1C1C] rounded-lg">Book Consult</a>
+              <i class=" rotate-45 text-xl fa-solid fa-circle-arrow-up"></i>
+            </div>
       </div>
     </footer>
   </body>
